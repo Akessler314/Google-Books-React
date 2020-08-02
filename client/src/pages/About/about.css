@@ -1,0 +1,21 @@
+body { 
+background-color: #EAE7DC;
+}
+
+.search-form { 
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center; 
+}
+
+.welcome { 
+    color: #E85A4F;
+    text-decoration: underline;
+    padding: 10px;
+}
+
+p { 
+font-size: large;
+}
+input { 
+width: 250px}

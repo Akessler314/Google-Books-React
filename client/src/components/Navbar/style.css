@@ -2,11 +2,12 @@ nav.navbar.navbar-default {
   margin-bottom: 0;
 }
 .navbar { 
-  background: #263041;
+  background: #E98074;
 }
 
 .nav-link, .navbar-brand { 
   color: #E5E5E5;
+  font-size: x-large;
 }
 
 .search-div { 

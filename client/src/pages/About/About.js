@@ -4,37 +4,42 @@ import Container from "../../components/Container/index";
 import Row from "../../components/Row/index";
 import Column from "../../components/Column/index";
 
+ import './about.css';
+
 function About() {
     return (
       <div>
-        <Hero backgroundImage="https://www.ballardspahr.com/-/media/images/offices/backgrounds/saltlakecity.jpg">
-          <h1>Kessler Corp.</h1>
-          <h2>Employee Directory</h2>
+        <Hero>
+          <h1>GOOGLE BOOKS REACT APP</h1>
         </Hero>
         <Container style={{ marginTop: 30 }}>
           <Row>
             <Column size="md-12">
-              <h1>Welcome To My Employee Directory </h1>
+              <h1 className="welcome">Welcome To My Google Books App</h1>
             </Column>
           </Row>
           <Row>
             <Column size="md-12">
               <p>
-                Welcome to my first React Application - this application will let a user easily search their compay's employees to find some information about that employee,
-                such as their contact information.
+                This application will allow a user to search for books and save books that they
+                <br></br>
+                 are interested in using a database to store the books that the user saved
               </p>
               <br></br>
               <p>Technologies Used for this project:</p>
               <ul>
                 <li>React, Framework website is built on</li>
-                <li>Axios, to make an API call for the random "Employees"</li>
+                <li>Axios, to make an API call for the Books</li>
                 <li>React Router DOM, for the seperate pages</li>
+                <li>4</li>
+                <li>5</li>
               </ul>
               <br></br>
               <p className="ty"> Thank you for visiting. - Andrew Kessler</p>
             </Column>
           </Row>
         </Container>
+        
       </div>
     );
   }
