@@ -5,17 +5,16 @@ function Card(props) {
   return (
     <div
       className="card"
-      
+
     >
-      <img className="card-img-top" src= {props.image} alt={`Employee at Kessler Corp: ${props.firstName} ${props.lastName}`}></img>
+      <img className="card-img-top" src={props.image} alt={`Cover Image of the Book: ${props.image}`}></img>
       <div className="card-body information">
-      <h5 className="card-title">{`${props.firstName} ${props.lastName}`}</h5>
-  <p className ="Card-text">Email: {props.email}</p>
-    <p className ="Card-text">Phone: {props.phoneNum}</p>
-    <p className ="Card-text">Age: {props.age}</p>
-    <p className ="Card-text">SSN: {props.ssn}</p>
+        <h5 className="card-title">{`${props.image}`}</h5>
+        <p className="Card-text">author(s): {props.phoneNum}</p>
+        <p className="Card-text">link: {props.age}</p>
+        <p className="Card-text">Description: {props.description}</p>
       </div>
-   
+
     </div>
   );
 }
