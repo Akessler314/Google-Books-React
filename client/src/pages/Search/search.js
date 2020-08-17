@@ -12,7 +12,7 @@ import './search.css';
 function Search() {
 
   const [query, setQuery] = useState('');
-  const [maxResults, setMaxResults] = useState(0);
+  const [maxResults, setMaxResults] = useState(5);
   const [response, setResponse] = useState([])
 
   const bookSearchFunc = (event) => {
@@ -22,7 +22,6 @@ function Search() {
         `https://www.googleapis.com/books/v1/volumes?q=${query}&maxResults=${maxResults}`
       )
       .then(res => {
-        console.log(res.data)
         setResponse(res.data.items)
       })
       .catch(err => {
@@ -50,16 +49,15 @@ function Search() {
         <input
           className="amountSearch"
           type="number"
-          placeholder="20"
           min="1"
           max="40"
+          defaultValue="5"
           onChange={e => setMaxResults(e.target.value)}
         />
       </form>
       <Container style={{ marginTop: 30 }}>
         <Row>
           {response.map((items, i) => {
-            console.log(items)
             let image = items.volumeInfo?.imageLinks?.thumbnail ?? 'https://via.placeholder.com/128x192.png?text=Unavailable'
 
             return (

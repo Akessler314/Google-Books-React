@@ -31,8 +31,7 @@ function About() {
                 <li>React, Framework website is built on</li>
                 <li>Axios, to make an API call for the Books</li>
                 <li>React Router DOM, for the seperate pages</li>
-                <li>4</li>
-                <li>5</li>
+                <li>Mongo DB to save information for saved books</li>
               </ul>
               <br></br>
               <p className="ty"> Thank you for visiting. - Andrew Kessler</p>
