@@ -9,8 +9,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 // Serve up static assets (usually on heroku)
 
-  app.use(express.static("client/build"));
-
+app.use(express.static("client/build"));
 
 // Define API routes here
 
